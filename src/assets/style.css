@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body-from: hsla(335, 55%, 84%, 1);
+  --body-to: hsla(211, 71%, 75%, 1);
+
+  --color-primary: hsla(342, 88%, 62%, 0.7);
+  --color-secondary: hsla(275, 40%, 50%, 0.2);
+
+  --color-orange: hsla(28, 87%, 62%, 1);
+  --color-purple: hsla(259, 23%, 39%, 1);
+  --color-blue: hsla(201, 54%, 49%, 1);
+
+  background: linear-gradient(
+    133.9deg,
+    hsla(342, 88%, 62%, 0.2) 0.24%,
+    hsla(275, 40%, 50%, 0.2) 95.04%
+  );
+}
+
+body {
+  background: linear-gradient(115deg, var(--body-from), var(--body-to));
+}
