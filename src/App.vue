@@ -17,7 +17,15 @@
           </div>
 
           <div class="mt-12">
-            <h3 class="text-lg">Recent Payment</h3>
+            <h3 class="text-lg">
+              Recent Payment
+              <button
+                class="ml-2 bg-gray-200 text-primary rounded-full px-2 py-0.5 text-xs"
+                @click="addRecentPayment"
+              >
+                Add
+              </button>
+            </h3>
 
             <div class="mt-4">
               <RecentPayments :recentPayments="recentPayments" />
@@ -45,7 +53,7 @@ import Card from '@/components/Card.vue'
 import RecentPayments from '@/components/RecentPayments.vue'
 import PaymentDetail from '@/components/PaymentDetail.vue'
 import { CardType } from '@/types/Card'
-import { RecentPayment } from '@/types/RecentPayment'
+import { PaymentAction, RecentPayment } from '@/types/RecentPayment'
 
 export default defineComponent({
   components: {
@@ -103,9 +111,23 @@ export default defineComponent({
       },
     ])
 
+    const addRecentPayment = () => {
+      const nextId =
+        Math.max(...recentPayments.map((recentPayment) => recentPayment.id)) + 1
+
+      recentPayments.unshift({
+        id: nextId,
+        name: 'Charge Comes Back',
+        action: 'payment',
+        date: 'Mar 21, 2021',
+        amount: '-$200',
+      })
+    }
+
     return {
       cards,
       recentPayments,
+      addRecentPayment,
     }
   },
 })
