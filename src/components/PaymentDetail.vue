@@ -51,14 +51,14 @@
     <div class="flex justify-between items-end pt-5">
       <div class="mr-16">
         <span class="block text-right text-xxs"
-          >Subtotal: <strong>$250.00</strong></span
+          >Subtotal : <strong>$250.00</strong></span
         >
         <span class="block text-right text-xxs"
           >Tax: <strong>$25.00</strong></span
         >
       </div>
       <span class="block text-xxs"
-        >Amount Due (USD): <strong>$275.00</strong></span
+        >Amount Due (USD) : <strong>$275.00</strong></span
       >
     </div>
   </div>
