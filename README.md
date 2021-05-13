@@ -13,17 +13,13 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCss" />
 </p>
 
-<div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="./screenshots/desktop.png" width="70%" height="50%" />
-  <span style="display: block; margin-top: 1rem; font-style: italic;">Desktop</span>
+<div align="center">
+  <img src="./screenshots/desktop.png" width="50%" />
 </div>
 
-<div style="display: flex; flex-direction: column; align-items: center; margin-top: 3rem;">
-  <div style="display: flex; justify-content: space-evenly;">
-    <img src="./screenshots/mobile-top.png" width="25%" />
-    <img src="./screenshots/mobile-top.png" width="25%" />
-  </div>
-  <span style="display: block; margin-top: 1rem; font-style: italic;">Mobile</span>
+<div align="center" style="margin-top: 2rem;">
+  <img src="./screenshots/mobile-top.png" width="320px" style="margin-right: 2rem;" />
+  <img src="./screenshots/mobile-bottom.png" width="320px" />
 </div>
 
 ## Getting started
