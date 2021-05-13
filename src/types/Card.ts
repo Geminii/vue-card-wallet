@@ -1,9 +1,9 @@
 type category = 'visa' | 'mastercard'
 
 export interface CardType {
-  id: number
+  id?: number
   category: category
-  num: number
+  num: string
   owner: string
   expiration: string
 }

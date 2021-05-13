@@ -2,9 +2,12 @@
   <div class="card rounded-3xl text-white">
     <div class="px-5 pt-11 pb-7 border-b border-gray-100 border-opacity-20">
       <div class="flex items-center justify-between">
-        <ExchangeIcon />
+        <ExchangeIcon class="filter brightness-150" />
 
-        <VisaIcon v-if="card.category === 'visa'" />
+        <VisaIcon
+          v-if="card.category === 'visa'"
+          class="filter brightness-150"
+        />
         <MastercardIcon
           v-if="card.category === 'mastercard'"
           class="w-12 h-8 filter contrast-75"
@@ -21,7 +24,7 @@
           </div>
         </div>
 
-        <ChipIcon />
+        <ChipIcon class="filter brightness-150" />
       </div>
     </div>
 
@@ -69,3 +72,14 @@ export default defineComponent({
   },
 })
 </script>
+
+<style scoped>
+.card {
+  max-width: 364px;
+  background: linear-gradient(
+    134deg,
+    hsla(253, 77%, 64%, 1),
+    hsla(334, 74%, 74%, 1)
+  );
+}
+</style>

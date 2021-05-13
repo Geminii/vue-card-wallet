@@ -13,7 +13,7 @@
           </h2>
 
           <div class="grid grid-cols-1 md:grid-cols-2 mt-9 gap-8">
-            <Card v-for="card in cards" :key="card.id" :card="card"></Card>
+            <CardList :cards="cards" />
           </div>
 
           <div class="mt-12">
@@ -49,7 +49,7 @@
 <script lang="ts">
 import { defineComponent, reactive } from 'vue'
 import AppHeader from '@/components/AppHeader.vue'
-import Card from '@/components/Card.vue'
+import CardList from '@/components/CardList.vue'
 import RecentPayments from '@/components/RecentPayments.vue'
 import PaymentDetail from '@/components/PaymentDetail.vue'
 import { CardType } from '@/types/Card'
@@ -58,28 +58,13 @@ import { PaymentAction, RecentPayment } from '@/types/RecentPayment'
 export default defineComponent({
   components: {
     AppHeader,
-    Card,
+    CardList,
     RecentPayments,
     PaymentDetail,
   },
   setup() {
     // TODO(Initialize data from file or API ?!)
-    const cards = reactive<CardType[]>([
-      {
-        id: 1,
-        category: 'visa',
-        num: 1234123222240034,
-        owner: 'Craig S.',
-        expiration: '09/25',
-      },
-      {
-        id: 2,
-        category: 'mastercard',
-        num: 1234123400020329,
-        owner: 'Doe J.',
-        expiration: '09/21',
-      },
-    ])
+    const cards = reactive<CardType[]>([])
     const recentPayments = reactive<RecentPayment[]>([
       {
         id: 1,
@@ -132,14 +117,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style>
-.card {
-  max-width: 364px;
-  background: linear-gradient(
-    134deg,
-    hsla(253, 77%, 64%, 1),
-    hsla(334, 74%, 74%, 1)
-  );
-}
-</style>
