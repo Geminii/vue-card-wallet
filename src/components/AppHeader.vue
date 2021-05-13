@@ -16,6 +16,10 @@
       </div>
 
       <UserIcon />
+
+      <a href="https://github.com/Geminii/vue-card-wallet" target="_blank">
+        <GithubIcon class="ml-3 w-6 h-6 text-gray-300 hover:text-gray-400" />
+      </a>
     </div>
   </header>
 </template>
@@ -25,6 +29,7 @@ import { defineComponent } from 'vue'
 import Logo from '@/components/Logo.vue'
 import BellIcon from '@/components/Icons/BellIcon.vue'
 import UserIcon from '@/components/Icons/UserIcon.vue'
+import GithubIcon from '@/components/Icons/GithubIcon.vue'
 
 export default defineComponent({
   name: 'AppHeader',
@@ -32,6 +37,7 @@ export default defineComponent({
     Logo,
     BellIcon,
     UserIcon,
+    GithubIcon,
   },
 })
 </script>
