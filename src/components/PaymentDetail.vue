@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-card p-8 mt-9 m-auto lg:ml-0 max-w-sm">
+  <div class="shadow-card p-4 md:p-8 mt-9 m-auto lg:ml-0 max-w-sm">
     <div class="border-b border-gray-100 pb-5 text-center">
       <ProfileIcon />
       <h3>Adison Rosser</h3>
