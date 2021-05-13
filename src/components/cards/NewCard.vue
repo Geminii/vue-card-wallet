@@ -31,19 +31,21 @@
       </div>
     </div>
 
-    <div class="flex items-center justify-between text-sm p-5">
+    <div
+      class="flex flex-col md:flex-row md:items-center justify-between text-sm p-5"
+    >
       <div>
         <label for="owner" class="block text-xs">Owner:</label>
         <input
           id="owner"
           type="text"
           v-model="card.owner"
-          class="w-48"
+          class="w-38 lg:w-32 xl:w-48"
           minlength="4"
           required
         />
       </div>
-      <div>
+      <div class="mt-4 md:mt-0">
         <span class="block text-xs">End date</span>
         <input
           type="text"

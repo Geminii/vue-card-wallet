@@ -21,7 +21,6 @@ module.exports = {
       },
       gridTemplateColumns: {
         'recent-payment': '200px 1fr 1fr 1fr 26px',
-        'card-payment': '1fr 324px',
       },
     },
   },
